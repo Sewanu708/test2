@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+.hero-section{
+    width: 100%;
+    height: auto;
+    display:flex;
+    align-items: center;
+    justify-content: start;
+    padding: 2rem 5rem 5px 5rem;
+
+}
+
+.categories{
+    width: 20%;
+    height: auto;
+    border-right: 1px solid#F6F6F6; 
+    padding-right: 16px;
+    
+}
+
+.categories ul{
+    width: 100%;
+    height: auto;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+}
+.categories ul li{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.categories ul li a{
+    color: black;
+    text-decoration: none;
+}
+
+.showroom{
+    width: 80%;
+    height: auto;
+    margin-left: 2rem;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2rem 0rem 4rem ;
+    color: white;
+    background-image: url('./images/products/hero_endframe__cvklg0xk3w6e_large\ 2.png');
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: 352px;
+    
+}
+
+.left-section{
+    padding-top: 4rem;
+    padding-bottom: 2rem;
+    width: 50%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    row-gap: 1rem;
+}
+
+.iphone{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    column-gap: 1rem;
+}
+
+.iphone-logo{
+    width: 60px;
+    height: auto;
+}
+
+.iphone-logo img{
+    width: 100%;
+    height: 100%;
+}
+
+.iphone p{
+    font-size: 12px;
+}
+
+.description{
+    width: 100%;
+    font-size: 48px;
+    color: #D9D9D9;
+    font-weight: 600;
+    text-wrap: nowrap;
+}
+
+.shopnow{
+    width: 100%;
+    font-size: 16px;
+    color: #D9D9D9;
+    display: flex;
+    justify-content: start;
+    align-content: center;
+    column-gap: 0.7rem;
+    position: relative;
+    cursor: pointer;
+}
+
+.shopnowtext{
+    text-decoration: none;
+    color: #D9D9D9;
+}
+
+.shopnowtext::after{
+    width: 22%;
+    content: "";
+    height: 2px;
+    background-color:  #b1b1b1;
+    position: absolute;
+    left: 0;
+    
+    bottom: 0;
+}
+
+.right-section{
+    width: 40%;
+    height: auto;
+}
+
+.right-section img{
+    width: 100%;
+    height: auto;
+}
+
+@media screen and (max-width:1200px){
+    
+.hero-section{
+
+    padding: 2rem 2rem 5px 2rem;
+
+}
+.categories ul li a{
+    font-size: 14px;
+}
+}
+@media screen and (max-width:900px){
+    .categories
+    {
+        display: none;
+    }
+    
+    .showroom{
+        width: 100%;
+        margin-left: 0;
+    }
+
+}
+@media screen and (max-width:768px){
+   .description{
+    font-size: 30px;
+    
+   } 
+    .showroom{
+        padding: 0 1rem 0rem 2rem ;
+    }
+    .left-section{
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+ 
+}
+
+@media screen and (max-width:468px){
+    .showroom{
+        padding: 0 1rem 0rem 1rem ;
+        background-size: 182px;
+    }
+
+    .description{
+        width: 100%;
+        font-size: 18px;
+        color: #D9D9D9;
+        font-weight: 600;
+        text-wrap: nowrap;
+        padding-left: 0.8rem;
+    }
+    .shopnowtext{
+        font-size: 12px;
+        padding-left: 0.8rem;
+    }
+    
+    .iphone p{
+        font-size: 12px;
+       
+    }
+    .iphone-logo{
+        width: 40px;
+        height: 40px;
+    }
+    .iphone-logo img{
+        width: 100%;
+        height: 100%;
+    }
+    .iphone{
+       
+        column-gap: 0.3rem;
+    }
+    .hero-section{
+        
+        padding: 2rem 1rem 0 1rem;
+    
+    }
+   
+}
